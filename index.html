@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Online Eduaction Platform|Science Expertise</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+
+        @media only screen and (max-width:152px) {
+
+            body {
+                width: 100%;
+                height: 100%;
+                background-color: #252839;
+            }
+            img{
+                width: 75px;
+                height: 75px;
+            }
+
+            .container {
+                /* border: 2px solid black; */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            .container h1 {
+                color: #01fe87;
+                font-size: 10px;
+            }
+
+            .container p {
+                color: lightcoral;
+                font-size: 7px;
+            }
+            .container a{
+                font-size: 9px;
+            }
+
+            h2 {
+                display: none;
+            }
+
+            h2:before {
+                display: none;
+            }
+
+            #trick {
+                display: none;
+            }
+
+            #trick1 {
+                display: none;
+            }
+
+            #time {
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width:152px) and (max-width:357px) {
+
+            body {
+                width: 100%;
+                height: 100%;
+                background-color: #252839;
+            }
+            img{
+                width: 80px;
+                height: 80px;
+            }
+
+            .container {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container h1 {
+                text-align: center;
+                color: #01fe87;
+                font-size: 15px;
+            }
+
+            .container p {
+                color: lightcoral;
+                font-size: 8px;
+            }
+
+            .container a {
+                font-size: 11px;
+            }
+
+            h2 {
+                display: none;
+            }
+
+            h2:before {
+                display: none;
+            }
+
+            #trick {
+                display: none;
+            }
+
+            #trick1 {
+                display: none;
+            }
+
+            #time {
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width:350px) and (max-width:620px) {
+
+            body {
+                width: 100%;
+                height: 100%;
+                background-color: #252839;
+            }
+
+            .container {
+                /* border: 2px solid black; */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container h1 {
+                text-align: center;
+                color: #01fe87;
+                font-size: px;
+            }
+
+            .container p {
+                color: lightcoral;
+                font-size: 20px;
+            }
+
+            h2 {
+                display: none;
+            }
+
+            h2:before {
+                display: none;
+            }
+
+            #trick {
+                display: none;
+            }
+
+            #trick1 {
+                display: none;
+            }
+
+            #time {
+                display: none;
+            }
+        }
+
+
+        @media only screen and (min-width:620px) and (max-width:770px) {
+
+            body {
+                width: 100%;
+                height: 100%;
+                background-color: #252839;
+            }
+
+            .container {
+                /* border: 2px solid black; */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container h1 {
+                text-align: center;
+                color: #01fe87;
+                font-size: 40px;
+            }
+
+            .container p {
+                color: lightcoral;
+            }
+
+            h2 {
+                display: none;
+            }
+
+            h2:before {
+                display: none;
+            }
+
+            #trick {
+                display: none;
+            }
+
+            #trick1 {
+                display: none;
+            }
+
+            #time {
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width:770px) {
+            .container {
+                display: none;
+            }
+        }
+
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #252839;
+        }
+
+        h2 {
+            position: relative;
+            font-size: 75px;
+            color: #252839;
+            -webkit-text-stroke: 2px #383d52;
+            /* text-transform: uppercase; */
+
+        }
+
+        h2::before {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            color: #01fe87;
+            -webkit-text-stroke: 0px #383d52;
+            border-right: 2px solid #01fe87;
+            overflow: hidden;
+            animation: animate 8s linear infinite;
+
+        }
+
+        p {
+            margin: 15px;
+            color: lightcoral;
+            font-size: 22px;
+        }
+
+        a {
+            color: white;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: white;
+            color: black;
+            border-radius: 15px;
+            padding: 5px;
+        }
+
+        @keyframes animate {
+
+            0%,
+            10%,
+            100% {
+                width: 0;
+            }
+
+            70%,
+            90% {
+                width: 100%;
+            }
+        }
+
+        #time {
+            font-size: 13px;
+            color: #01fe87;
+        }
+        #time:hover{
+            transform:scale(1.3);
+        }
+        img:hover{
+            transform:scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="Logo.jpg" alt="" width="100px" height="100px">
+    <h2 data-text="Science_Expertise...">Science_Expertise...</h2>
+    <p id="trick">The Best Online Education Platform</p>
+    <a href="index1.html" id="trick">👉Click here to enter the website</a>
+    <script>
+        function clock() {
+            time.innerHTML = new Date();
+        }
+        setInterval(clock, 1000);
+    </script>
+    <div class="container">
+        <h1>Science_Expertise...</h1>
+        <p>The Best Online Eduction Platform</p>
+        <a href="index1.html">👉Click here to Enter the website</a>
+    </div>
+    <p id="time"></p>
+
+</body>
+
+</html>

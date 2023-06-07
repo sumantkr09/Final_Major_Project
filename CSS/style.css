@@ -1,0 +1,261 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* Navigation Bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top: 0px;
+    left: 0px;
+}
+img{
+    margin: 10px 35px;
+    height: 60px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none;
+    font-size:medium;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding:3px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+button a
+{
+    text-decoration: none;
+    color: grey;
+}
+/* Section Styling */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    height:550px;
+    align-items: center;
+    justify-content: center;
+}
+#home::before{
+    content: "";
+    background:url('../backgroundImage.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height:650px;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.5;
+}
+#home h1{
+    color:blueviolet;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#home p{
+    color:darkred;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: bisque;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.center{
+    text-align: center;
+}
+
+
+/* Services Section */
+
+#services{
+    display: flex;
+    /* margin: 34px; */
+    margin: 10px;
+}
+#services a{
+    text-decoration: none;
+    color: black;
+}
+#services .box{
+    border:2px solid red;
+    /* padding: 35px; */
+    padding: 25px;
+    margin: 2px 4px;
+    border-radius: 23px;
+    background-color:lightgray;
+    
+}
+#services .box img{
+    display: block;
+    height: 160px;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+.box:hover{
+    transform:scale(0.9);
+    transition-duration: 1s;
+}
+
+/* Client Section */
+
+#client-section{
+    position: relative;
+     /* height: 344px; */
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../backgroundImage.jpg)no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#clients img{
+    height: 124px;
+}
+#clients img:hover{
+    transform: scale(1.3);
+    transition-duration: 1s;
+}
+.clients-item{
+    padding: 34px;
+}
+
+/* Contact Section */
+/* #contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url(../contactUs.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    margin: 12px 0px;
+    z-index: -1;
+    opacity: 0.3;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+#contact-box form{
+    width: 45%;
+}
+#contact-box level{
+    font-size: 1.3rem;
+} */
+
+ /* Link Section */
+#quick{
+    background-color: grey;
+    margin: 25px 0px;
+    color: white;
+    flex-direction: row;   
+}
+.add{
+    margin: 0px 12px;
+}
+.add p{
+    font-size: 17px;
+}
+.ql{
+    margin: 7px 12px;
+    display: flex;
+    flex-direction: column;
+}
+.ql a{
+    text-decoration: none;
+    margin: 1px ;
+    color: white;
+    font-size: 17px;
+}
+.ql a:hover{
+    color: darkorange;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    margin: 7px 12px;
+}
+.social a,p{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+.social a:hover{
+    color: darkorange;
+
+}
+.extra a:hover{
+    background-color: green;
+    color: white;
+}
+
+
+/* footer */
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
